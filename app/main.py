@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.routers import todo
 from app.database import Base, engine
+import os
 
 Base.metadata.create_all(bind=engine)
 
