@@ -7,14 +7,15 @@ class TodoBase(BaseModel):
     active: bool
 
 class TodoCreate(TodoBase):
-    author_id: id
+    pass
+    # author_id: id
 
 class TodoUpdate(TodoBase):
     pass 
 
 class Todo(TodoBase):
     id: int
-    author_id: int
+    # author_id: int
 
     class Config:
         from_attributes = True
