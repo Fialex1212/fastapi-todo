@@ -11,5 +11,5 @@ class Todo(Base):
     content = Column(String)
     active = Column(Boolean)
 
-    author = relationship("User", back_populates="todos")
-    author_id = Column(Integer, ForeignKey("users.id"))
+    # author = relationship("User", back_populates="todos")
+    # author_id = Column(Integer, ForeignKey("users.id"))
