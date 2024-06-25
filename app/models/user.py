@@ -9,4 +9,4 @@ class User(Base):
     username = Column(String, index=True, unique=True)
     email = Column(String, index=True, unique=True)
     hashed_password = Column(String)
-    todos = relationship("Todo", back_populates="author")
+    # todos = relationship("Todo", back_populates="author")
