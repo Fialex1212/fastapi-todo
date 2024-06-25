@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from app.routers import todo
 from app.database import Base, engine
+from fastapi.middleware.cors import CORSMiddleware
 import os
 
 Base.metadata.create_all(bind=engine)
